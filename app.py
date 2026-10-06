@@ -221,7 +221,7 @@ with tab1:
         hovermode="x unified"
     )
     fig.update_yaxes(title_text="Glucose (mg/dL)", range=[40, 320], row=1, col=1)
-    fig.update_yaxes(title_text="Carbs (g)", row=2, col=1
+    fig.update_yaxes(title_text="Carbs (g)", row=2, col=1)
     st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
