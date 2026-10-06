@@ -218,7 +218,7 @@ with tab1:
         height=550,
         margin=dict(l=20, r=20, t=40, b=20),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        hovermode="x unified"
+        hovermode="x unified
     )
     fig.update_yaxes(title_text="Glucose (mg/dL)", range=[40, 320], row=1, col=1)
     fig.update_yaxes(title_text="Carbs (g)", row=2, col=1)
