@@ -1,0 +1,3 @@
+"""
+GlucoTrend Source Package Initialization
+"""

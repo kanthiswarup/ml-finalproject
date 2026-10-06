@@ -1,0 +1,60 @@
+{
+    "30_min_forecasting": {
+        "Ridge Regression": {
+            "RMSE": 4.561,
+            "MAE": 3.345,
+            "R2": 0.9291,
+            "ISO_Zone_A_Pct": 99.15
+        },
+        "Random Forest": {
+            "RMSE": 4.761,
+            "MAE": 3.478,
+            "R2": 0.9228,
+            "ISO_Zone_A_Pct": 98.68
+        },
+        "Gradient Boosting": {
+            "RMSE": 4.626,
+            "MAE": 3.407,
+            "R2": 0.9271,
+            "ISO_Zone_A_Pct": 98.83
+        },
+        "XGBoost": {
+            "RMSE": 4.6,
+            "MAE": 3.378,
+            "R2": 0.9279,
+            "ISO_Zone_A_Pct": 98.78
+        }
+    },
+    "60_min_forecasting": {
+        "Ridge Regression": {
+            "RMSE": 7.939,
+            "MAE": 5.524,
+            "R2": 0.7848,
+            "ISO_Zone_A_Pct": 93.71
+        },
+        "Random Forest": {
+            "RMSE": 8.567,
+            "MAE": 5.971,
+            "R2": 0.7494,
+            "ISO_Zone_A_Pct": 92.39
+        },
+        "Gradient Boosting": {
+            "RMSE": 7.973,
+            "MAE": 5.626,
+            "R2": 0.783,
+            "ISO_Zone_A_Pct": 93.61
+        },
+        "XGBoost": {
+            "RMSE": 7.999,
+            "MAE": 5.632,
+            "R2": 0.7815,
+            "ISO_Zone_A_Pct": 93.91
+        }
+    },
+    "hypo_classification": {
+        "F1_Score": 0.7518,
+        "Precision": 0.6897,
+        "Recall": 0.8262,
+        "ROC_AUC": 0.9624
+    }
+}
