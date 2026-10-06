@@ -1,8 +1,14 @@
 import sys
 import os
 
-# Auto-launch Streamlit server if executed directly via PyCharm / Python instead of 'streamlit run'
-if __name__ == "__main__" and "streamlit" not in sys.argv[0]:
+# Auto-launch Streamlit CLI only when NOT already running inside an active Streamlit Runtime server
+try:
+    from streamlit.runtime import Runtime
+    is_running_in_streamlit = Runtime.exists()
+except Exception:
+    is_running_in_streamlit = False
+
+if __name__ == "__main__" and not is_running_in_streamlit:
     from streamlit.web import cli as stcli
     sys.argv = ["streamlit", "run", __file__] + sys.argv[1:]
     sys.exit(stcli.main())
